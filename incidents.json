@@ -1,0 +1,4123 @@
+[
+  {
+    "@timestamp": "2025-12-16T00:00:00Z",
+    "incident_id": "INC-2025-1216-001",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "prompt_injection",
+    "title": "Prompt injection attack on AcmeGPT Copilot system",
+    "description": "Prompt injection attack on AcmeGPT Copilot system - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "acmegpt-copilot-api",
+      "knowledge-base-prod"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "prompt-injection",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-16T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-16T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-16T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-16T01:08:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-16T01:38:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-16T01:38:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 98,
+    "resolution_summary": "Prompt injection attack on AcmeGPT Copilot system resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for prompt_injection incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access",
+        "Execution"
+      ],
+      "technique": [
+        "T1190 - Exploit Public-Facing Application",
+        "T1059 - Command and Scripting Interpreter"
+      ],
+      "prevention": [
+        "M1050 - Exploit Protection",
+        "M1021 - Restrict Web-Based Content"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001",
+      "TA0002"
+    ],
+    "mitre_technique_ids": [
+      "T1190",
+      "T1059"
+    ],
+    "mitre_prevention_ids": [
+      "M1050",
+      "M1021"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 24500,
+    "sla_met": true,
+    "mttr": 98,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: acmegpt-copilot-api, knowledge-base-prod",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "acmegpt-copilot-api",
+      "knowledge-base-prod"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for prompt_injection incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Prompt injection attack on AcmeGPT Copilot system resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 98 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-20T00:00:00Z",
+    "incident_id": "INC-2025-1020-002",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "api",
+    "type": "service_outage",
+    "title": "Payment API complete service outage",
+    "description": "Payment API complete service outage - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "payment-api-prod",
+      "transaction-processor",
+      "payment-gateway"
+    ],
+    "assigned_to": "api-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "service-outage",
+      "api",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-20T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-20T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-20T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-20T01:21:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-20T01:57:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-20T01:57:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 117,
+    "resolution_summary": "Payment API complete service outage resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for service_outage incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1037 - Filter Network Traffic"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1037"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Complete service unavailability, direct revenue loss $450K+, customer impact severe, SLA breach",
+    "estimated_cost": 97500,
+    "sla_met": true,
+    "mttr": 117,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: payment-api-prod, transaction-processor",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "payment-api-prod",
+      "transaction-processor",
+      "payment-gateway"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for service_outage incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Payment API complete service outage resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by api-team within 117 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-24T00:00:00Z",
+    "incident_id": "INC-2025-1224-003",
+    "severity": "high",
+    "status": "resolved",
+    "category": "api",
+    "type": "error_spike",
+    "title": "API Gateway 500 error spike",
+    "description": "API Gateway 500 error spike - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "api-gateway-prod",
+      "auth-service",
+      "user-service"
+    ],
+    "assigned_to": "api-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "error-spike",
+      "api",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-24T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-24T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-24T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T00:35:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T00:51:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-24T00:51:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 51,
+    "resolution_summary": "API Gateway 500 error spike resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for error_spike incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1018 - User Account Management"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1018"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Major service degradation, revenue impact $150K+, elevated customer complaints, performance SLA at risk",
+    "estimated_cost": 12750,
+    "sla_met": true,
+    "mttr": 51,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: api-gateway-prod, auth-service",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "api-gateway-prod",
+      "auth-service",
+      "user-service"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for error_spike incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "API Gateway 500 error spike resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by api-team within 51 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-17T00:00:00Z",
+    "incident_id": "INC-2025-1117-004",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "security",
+    "type": "data_exfiltration",
+    "title": "Suspected data exfiltration attempt detected",
+    "description": "Suspected data exfiltration attempt detected - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "customer-db-prod",
+      "api-backend",
+      "cdn-origin"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "data-exfiltration",
+      "security",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-17T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-17T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-17T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-17T03:19:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-17T04:45:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-17T04:45:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 285,
+    "resolution_summary": "Suspected data exfiltration attempt detected resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for data_exfiltration incident",
+    "mitre": {
+      "tactic": [
+        "Exfiltration",
+        "Collection"
+      ],
+      "technique": [
+        "T1020 - Automated Exfiltration",
+        "T1039 - Data from Network Shared Drive"
+      ],
+      "prevention": [
+        "M1057 - Data Loss Prevention",
+        "M1041 - Encrypt Sensitive Information"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0010",
+      "TA0009"
+    ],
+    "mitre_technique_ids": [
+      "T1020",
+      "T1039"
+    ],
+    "mitre_prevention_ids": [
+      "M1057",
+      "M1041"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Critical data breach risk, regulatory exposure, customer trust severely impacted",
+    "estimated_cost": 237500,
+    "sla_met": false,
+    "mttr": 285,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: customer-db-prod, api-backend",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "customer-db-prod",
+      "api-backend",
+      "cdn-origin"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for data_exfiltration incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Suspected data exfiltration attempt detected resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 285 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-14T00:00:00Z",
+    "incident_id": "INC-2025-1214-005",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "ddos_attack",
+    "title": "Distributed denial-of-service attack on public API",
+    "description": "Distributed denial-of-service attack on public API - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "public-api",
+      "load-balancer",
+      "cdn"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "ddos-attack",
+      "infrastructure",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-14T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-14T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-14T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-14T05:29:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-14T07:50:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-14T07:50:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 470,
+    "resolution_summary": "Distributed denial-of-service attack on public API resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for ddos_attack incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1498 - Network Denial of Service"
+      ],
+      "prevention": [
+        "M1037 - Filter Network Traffic",
+        "M1031 - Network Intrusion Prevention"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1498"
+    ],
+    "mitre_prevention_ids": [
+      "M1037",
+      "M1031"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Complete infrastructure failure, business operations halted, productivity loss severe",
+    "estimated_cost": 391666,
+    "sla_met": false,
+    "mttr": 470,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: public-api, load-balancer",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "public-api",
+      "load-balancer",
+      "cdn"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for ddos_attack incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Distributed denial-of-service attack on public API resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 470 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-07T00:00:00Z",
+    "incident_id": "INC-2025-1207-006",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "leaked_credentials",
+    "title": "AWS credentials leaked in public repository",
+    "description": "AWS credentials leaked in public repository - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "aws-prod-account",
+      "s3-buckets",
+      "ec2-instances"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "leaked-credentials",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-07T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-07T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-07T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-07T03:26:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-07T04:55:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-07T04:55:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 295,
+    "resolution_summary": "AWS credentials leaked in public repository resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for leaked_credentials incident",
+    "mitre": {
+      "tactic": [
+        "Credential Access",
+        "Initial Access"
+      ],
+      "technique": [
+        "T1552 - Unsecured Credentials",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1027 - Password Policies",
+        "M1047 - Audit",
+        "M1041 - Encrypt Sensitive Information"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0006",
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1552",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1027",
+      "M1047",
+      "M1041"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 73750,
+    "sla_met": false,
+    "mttr": 295,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: aws-prod-account, s3-buckets",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "aws-prod-account",
+      "s3-buckets",
+      "ec2-instances"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for leaked_credentials incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "AWS credentials leaked in public repository resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 295 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-04T00:00:00Z",
+    "incident_id": "INC-2025-1204-007",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "security",
+    "type": "stale_account",
+    "title": "Stale administrative account with elevated privileges discovered",
+    "description": "Stale administrative account with elevated privileges discovered - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "active-directory",
+      "user-management",
+      "access-control"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "stale-account",
+      "security",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-04T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-04T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-04T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-04T05:17:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-04T07:34:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-04T07:34:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 454,
+    "resolution_summary": "Stale administrative account with elevated privileges discovered resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for stale_account incident",
+    "mitre": {
+      "tactic": [
+        "Persistence",
+        "Privilege Escalation"
+      ],
+      "technique": [
+        "T1078 - Valid Accounts",
+        "T1098 - Account Manipulation"
+      ],
+      "prevention": [
+        "M1026 - Privileged Account Management",
+        "M1018 - User Account Management"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0003",
+      "TA0004"
+    ],
+    "mitre_technique_ids": [
+      "T1078",
+      "T1098"
+    ],
+    "mitre_prevention_ids": [
+      "M1026",
+      "M1018"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Moderate security risk, limited exposure, potential for escalation if not addressed",
+    "estimated_cost": 37833,
+    "sla_met": true,
+    "mttr": 454,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: active-directory, user-management",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "active-directory",
+      "user-management",
+      "access-control"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for stale_account incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Stale administrative account with elevated privileges discovered resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 454 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-24T00:00:00Z",
+    "incident_id": "INC-2025-1224-008",
+    "severity": "high",
+    "status": "resolved",
+    "category": "application",
+    "type": "vulnerable_dependency",
+    "title": "Critical vulnerability in production dependency",
+    "description": "Critical vulnerability in production dependency - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "web-app-prod",
+      "api-services",
+      "frontend"
+    ],
+    "assigned_to": "application-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "vulnerable-dependency",
+      "application",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-24T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-24T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-24T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T01:29:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T02:08:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-24T02:08:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 128,
+    "resolution_summary": "Critical vulnerability in production dependency resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for vulnerable_dependency incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access"
+      ],
+      "technique": [
+        "T1190 - Exploit Public-Facing Application",
+        "T1203 - Exploitation for Client Execution"
+      ],
+      "prevention": [
+        "M1051 - Update Software",
+        "M1016 - Vulnerability Scanning"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1190",
+      "T1203"
+    ],
+    "mitre_prevention_ids": [
+      "M1051",
+      "M1016"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Application critical functionality impaired, significant user impact, revenue at risk",
+    "estimated_cost": 32000,
+    "sla_met": true,
+    "mttr": 128,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: web-app-prod, api-services",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "web-app-prod",
+      "api-services",
+      "frontend"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for vulnerable_dependency incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Critical vulnerability in production dependency resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by application-team within 128 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-02T00:00:00Z",
+    "incident_id": "INC-2025-1202-009",
+    "severity": "high",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "malware_detection",
+    "title": "Malware detected on employee workstation",
+    "description": "Malware detected on employee workstation - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-147",
+      "network-segment-5"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "malware-detection",
+      "endpoint",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-02T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-02T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-02T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-02T04:48:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-02T06:52:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-02T06:52:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 412,
+    "resolution_summary": "Malware detected on employee workstation resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for malware_detection incident",
+    "mitre": {
+      "tactic": [
+        "Execution",
+        "Persistence"
+      ],
+      "technique": [
+        "T1204 - User Execution",
+        "T1543 - Create or Modify System Process"
+      ],
+      "prevention": [
+        "M1049 - Antivirus/Antimalware",
+        "M1038 - Execution Prevention",
+        "M1017 - User Training"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0002",
+      "TA0003"
+    ],
+    "mitre_technique_ids": [
+      "T1204",
+      "T1543"
+    ],
+    "mitre_prevention_ids": [
+      "M1049",
+      "M1038",
+      "M1017"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Multiple endpoints compromised, potential for lateral movement, data at risk",
+    "estimated_cost": 103000,
+    "sla_met": false,
+    "mttr": 412,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-147, network-segment-5",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-147",
+      "network-segment-5"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for malware_detection incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Malware detected on employee workstation resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 412 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-26T00:00:00Z",
+    "incident_id": "INC-2025-1126-010",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "security",
+    "type": "phishing_attack",
+    "title": "Phishing campaign targeting employees",
+    "description": "Phishing campaign targeting employees - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "email-gateway",
+      "user-accounts"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "phishing-attack",
+      "security",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-26T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-26T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-26T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-26T00:24:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-26T00:35:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-26T00:35:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 35,
+    "resolution_summary": "Phishing campaign targeting employees resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for phishing_attack incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "technique": [
+        "T1566 - Phishing",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1017 - User Training",
+        "M1032 - Multi-factor Authentication",
+        "M1021 - Restrict Web-Based Content"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001",
+      "TA0006"
+    ],
+    "mitre_technique_ids": [
+      "T1566",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1017",
+      "M1032",
+      "M1021"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Moderate security risk, limited exposure, potential for escalation if not addressed",
+    "estimated_cost": 2916,
+    "sla_met": true,
+    "mttr": 35,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: email-gateway, user-accounts",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "email-gateway",
+      "user-accounts"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for phishing_attack incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Phishing campaign targeting employees resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 35 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-22T00:00:00Z",
+    "incident_id": "INC-2025-1022-011",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "ransomware_detection",
+    "title": "Ransomware activity detected on file server",
+    "description": "Ransomware activity detected on file server - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "file-server-prod",
+      "backup-system"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "ransomware-detection",
+      "endpoint",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-22T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-22T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-22T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-22T03:16:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-22T04:41:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-22T04:41:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 281,
+    "resolution_summary": "Ransomware activity detected on file server resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for ransomware_detection incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1486 - Data Encrypted for Impact",
+        "T1490 - Inhibit System Recovery"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1040 - Behavior Prevention on Endpoint",
+        "M1049 - Antivirus/Antimalware"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1486",
+      "T1490"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1040",
+      "M1049"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Critical impact to endpoint systems affecting service delivery",
+    "estimated_cost": 234166,
+    "sla_met": false,
+    "mttr": 281,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: file-server-prod, backup-system",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "file-server-prod",
+      "backup-system"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for ransomware_detection incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Ransomware activity detected on file server resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 281 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-17T00:00:00Z",
+    "incident_id": "INC-2025-1017-012",
+    "severity": "low",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "policy_violation",
+    "title": "Unauthorized software installation detected",
+    "description": "Unauthorized software installation detected - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-203"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "policy-violation",
+      "endpoint",
+      "low"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-17T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-17T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-17T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-17T03:56:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-17T05:38:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-17T05:38:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 338,
+    "resolution_summary": "Unauthorized software installation detected resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for policy_violation incident",
+    "mitre": {
+      "tactic": [
+        "Command and Control"
+      ],
+      "technique": [
+        "T1219 - Remote Access Software",
+        "T1105 - Ingress Tool Transfer"
+      ],
+      "prevention": [
+        "M1038 - Execution Prevention",
+        "M1031 - Network Intrusion Prevention",
+        "M1017 - User Training"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0011"
+    ],
+    "mitre_technique_ids": [
+      "T1219",
+      "T1105"
+    ],
+    "mitre_prevention_ids": [
+      "M1038",
+      "M1031",
+      "M1017"
+    ],
+    "affected_users_count": 45,
+    "business_impact": "Single endpoint impact, minimal business disruption, isolated incident",
+    "estimated_cost": 5633,
+    "sla_met": true,
+    "mttr": 338,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-203",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-203"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for policy_violation incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Unauthorized software installation detected resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 338 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-09T00:00:00Z",
+    "incident_id": "INC-2025-1009-013",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "security",
+    "type": "unauthorized_access_attempt",
+    "title": "Multiple failed login attempts detected",
+    "description": "Multiple failed login attempts detected - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "auth-service",
+      "user-accounts"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "unauthorized-access-attempt",
+      "security",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-09T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-09T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-09T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-09T03:36:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-09T05:09:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-09T05:09:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 309,
+    "resolution_summary": "Multiple failed login attempts detected resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for unauthorized_access_attempt incident",
+    "mitre": {
+      "tactic": [
+        "Credential Access",
+        "Initial Access"
+      ],
+      "technique": [
+        "T1110 - Brute Force",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1036 - Account Use Policies",
+        "M1032 - Multi-factor Authentication",
+        "M1027 - Password Policies"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0006",
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1110",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1036",
+      "M1032",
+      "M1027"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Moderate security risk, limited exposure, potential for escalation if not addressed",
+    "estimated_cost": 25750,
+    "sla_met": true,
+    "mttr": 309,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: auth-service, user-accounts",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "auth-service",
+      "user-accounts"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for unauthorized_access_attempt incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Multiple failed login attempts detected resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 309 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-04T00:00:00Z",
+    "incident_id": "INC-2025-1004-014",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "configuration_drift",
+    "title": "Production server configuration drift detected",
+    "description": "Production server configuration drift detected - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "web-servers-prod",
+      "app-servers"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "configuration-drift",
+      "infrastructure",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-04T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-04T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-04T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-04T01:38:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-04T02:21:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-04T02:21:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 141,
+    "resolution_summary": "Production server configuration drift detected resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for configuration_drift incident",
+    "mitre": {
+      "tactic": [
+        "Defense Evasion"
+      ],
+      "technique": [
+        "T1562 - Impair Defenses"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1022 - Restrict File and Directory Permissions"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0005"
+    ],
+    "mitre_technique_ids": [
+      "T1562"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1022"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Infrastructure component degradation, backup systems engaged, limited impact",
+    "estimated_cost": 11750,
+    "sla_met": true,
+    "mttr": 141,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: web-servers-prod, app-servers",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "web-servers-prod",
+      "app-servers"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for configuration_drift incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Production server configuration drift detected resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 141 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-07T00:00:00Z",
+    "incident_id": "INC-2025-1107-015",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "application",
+    "type": "memory_leak",
+    "title": "Memory leak in customer portal application",
+    "description": "Memory leak in customer portal application - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "customer-portal",
+      "app-server-3"
+    ],
+    "assigned_to": "application-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "memory-leak",
+      "application",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-07T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-07T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-07T03:52:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-07T05:32:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-07T05:32:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 332,
+    "resolution_summary": "Memory leak in customer portal application resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for memory_leak incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1053 - Data Backup"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1053"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Moderate application impact, workflow disruption, reduced productivity",
+    "estimated_cost": 27666,
+    "sla_met": true,
+    "mttr": 332,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: customer-portal, app-server-3",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "customer-portal",
+      "app-server-3"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for memory_leak incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Memory leak in customer portal application resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by application-team within 332 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-31T00:00:00Z",
+    "incident_id": "INC-2025-1031-016",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "service_outage",
+    "title": "Database cluster complete outage",
+    "description": "Database cluster complete outage - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "postgres-cluster",
+      "replica-nodes"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "service-outage",
+      "infrastructure",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-31T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-31T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-31T05:29:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-31T07:50:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-31T07:50:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 470,
+    "resolution_summary": "Database cluster complete outage resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for service_outage incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1037 - Filter Network Traffic"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1037"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Complete infrastructure failure, business operations halted, productivity loss severe",
+    "estimated_cost": 391666,
+    "sla_met": false,
+    "mttr": 470,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: postgres-cluster, replica-nodes",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "postgres-cluster",
+      "replica-nodes"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for service_outage incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Database cluster complete outage resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 470 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-23T00:00:00Z",
+    "incident_id": "INC-2025-1223-017",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "api",
+    "type": "error_spike",
+    "title": "Search API elevated error rates",
+    "description": "Search API elevated error rates - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "search-api",
+      "elasticsearch-cluster"
+    ],
+    "assigned_to": "api-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "error-spike",
+      "api",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-23T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-23T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-23T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-23T03:33:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-23T05:05:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-23T05:05:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 305,
+    "resolution_summary": "Search API elevated error rates resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for error_spike incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1018 - User Account Management"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1018"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Partial service degradation, minor revenue impact, customer experience affected",
+    "estimated_cost": 25416,
+    "sla_met": true,
+    "mttr": 305,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: search-api, elasticsearch-cluster",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "search-api",
+      "elasticsearch-cluster"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for error_spike incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Search API elevated error rates resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by api-team within 305 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-04T00:00:00Z",
+    "incident_id": "INC-2025-1104-018",
+    "severity": "high",
+    "status": "resolved",
+    "category": "api",
+    "type": "service_outage",
+    "title": "Authentication service intermittent failures",
+    "description": "Authentication service intermittent failures - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "auth-api",
+      "oauth-provider"
+    ],
+    "assigned_to": "api-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "service-outage",
+      "api",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-04T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-04T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-04T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-04T02:25:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-04T03:28:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-04T03:28:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 208,
+    "resolution_summary": "Authentication service intermittent failures resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for service_outage incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1037 - Filter Network Traffic"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1037"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Major service degradation, revenue impact $150K+, elevated customer complaints, performance SLA at risk",
+    "estimated_cost": 52000,
+    "sla_met": true,
+    "mttr": 208,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: auth-api, oauth-provider",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "auth-api",
+      "oauth-provider"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for service_outage incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Authentication service intermittent failures resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by api-team within 208 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-22T00:00:00Z",
+    "incident_id": "INC-2025-1222-019",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "data_exfiltration",
+    "title": "Unusual S3 bucket access patterns detected",
+    "description": "Unusual S3 bucket access patterns detected - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "s3-customer-data",
+      "s3-access-logs"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "data-exfiltration",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-22T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-22T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-22T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-22T02:05:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-22T02:59:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-22T02:59:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 179,
+    "resolution_summary": "Unusual S3 bucket access patterns detected resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for data_exfiltration incident",
+    "mitre": {
+      "tactic": [
+        "Exfiltration",
+        "Collection"
+      ],
+      "technique": [
+        "T1020 - Automated Exfiltration",
+        "T1039 - Data from Network Shared Drive"
+      ],
+      "prevention": [
+        "M1057 - Data Loss Prevention",
+        "M1041 - Encrypt Sensitive Information"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0010",
+      "TA0009"
+    ],
+    "mitre_technique_ids": [
+      "T1020",
+      "T1039"
+    ],
+    "mitre_prevention_ids": [
+      "M1057",
+      "M1041"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 44750,
+    "sla_met": true,
+    "mttr": 179,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: s3-customer-data, s3-access-logs",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "s3-customer-data",
+      "s3-access-logs"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for data_exfiltration incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Unusual S3 bucket access patterns detected resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 179 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-29T00:00:00Z",
+    "incident_id": "INC-2025-1029-020",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "application",
+    "type": "vulnerable_dependency",
+    "title": "Zero-day vulnerability in web framework",
+    "description": "Zero-day vulnerability in web framework - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "web-framework",
+      "all-applications"
+    ],
+    "assigned_to": "application-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "vulnerable-dependency",
+      "application",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-29T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-29T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-29T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-29T02:22:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-29T03:23:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-29T03:23:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 203,
+    "resolution_summary": "Zero-day vulnerability in web framework resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for vulnerable_dependency incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access"
+      ],
+      "technique": [
+        "T1190 - Exploit Public-Facing Application",
+        "T1203 - Exploitation for Client Execution"
+      ],
+      "prevention": [
+        "M1051 - Update Software",
+        "M1016 - Vulnerability Scanning"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1190",
+      "T1203"
+    ],
+    "mitre_prevention_ids": [
+      "M1051",
+      "M1016"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Critical impact to application systems affecting service delivery",
+    "estimated_cost": 169166,
+    "sla_met": true,
+    "mttr": 203,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: web-framework, all-applications",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "web-framework",
+      "all-applications"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for vulnerable_dependency incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Zero-day vulnerability in web framework resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by application-team within 203 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-16T00:00:00Z",
+    "incident_id": "INC-2025-1116-021",
+    "severity": "high",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "ddos_attack",
+    "title": "Layer 7 DDoS attack on checkout service",
+    "description": "Layer 7 DDoS attack on checkout service - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "checkout-api",
+      "payment-gateway"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "ddos-attack",
+      "infrastructure",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-16T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-16T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-16T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-16T02:15:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-16T03:13:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-16T03:13:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 193,
+    "resolution_summary": "Layer 7 DDoS attack on checkout service resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for ddos_attack incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1498 - Network Denial of Service"
+      ],
+      "prevention": [
+        "M1037 - Filter Network Traffic",
+        "M1031 - Network Intrusion Prevention"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1498"
+    ],
+    "mitre_prevention_ids": [
+      "M1037",
+      "M1031"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant infrastructure impact, service degradation, business workflow disruption",
+    "estimated_cost": 48250,
+    "sla_met": true,
+    "mttr": 193,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: checkout-api, payment-gateway",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "checkout-api",
+      "payment-gateway"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for ddos_attack incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Layer 7 DDoS attack on checkout service resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 193 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-15T00:00:00Z",
+    "incident_id": "INC-2025-1115-022",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "security",
+    "type": "leaked_credentials",
+    "title": "Database credentials found in Slack channel",
+    "description": "Database credentials found in Slack channel - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "postgres-prod",
+      "slack-workspace"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "leaked-credentials",
+      "security",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-15T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-15T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-15T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-15T04:08:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-15T05:55:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-15T05:55:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 355,
+    "resolution_summary": "Database credentials found in Slack channel resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for leaked_credentials incident",
+    "mitre": {
+      "tactic": [
+        "Credential Access",
+        "Initial Access"
+      ],
+      "technique": [
+        "T1552 - Unsecured Credentials",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1027 - Password Policies",
+        "M1047 - Audit",
+        "M1041 - Encrypt Sensitive Information"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0006",
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1552",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1027",
+      "M1047",
+      "M1041"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Critical data breach risk, regulatory exposure, customer trust severely impacted",
+    "estimated_cost": 295833,
+    "sla_met": false,
+    "mttr": 355,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: postgres-prod, slack-workspace",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "postgres-prod",
+      "slack-workspace"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for leaked_credentials incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Database credentials found in Slack channel resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 355 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-31T00:00:00Z",
+    "incident_id": "INC-2025-1031-023",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "malware_detection",
+    "title": "Trojan detected in email attachment",
+    "description": "Trojan detected in email attachment - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-089",
+      "email-gateway"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "malware-detection",
+      "endpoint",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-31T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-31T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-31T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-31T04:37:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-31T06:37:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-31T06:37:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 397,
+    "resolution_summary": "Trojan detected in email attachment resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for malware_detection incident",
+    "mitre": {
+      "tactic": [
+        "Execution",
+        "Persistence"
+      ],
+      "technique": [
+        "T1204 - User Execution",
+        "T1543 - Create or Modify System Process"
+      ],
+      "prevention": [
+        "M1049 - Antivirus/Antimalware",
+        "M1038 - Execution Prevention",
+        "M1017 - User Training"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0002",
+      "TA0003"
+    ],
+    "mitre_technique_ids": [
+      "T1204",
+      "T1543"
+    ],
+    "mitre_prevention_ids": [
+      "M1049",
+      "M1038",
+      "M1017"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Limited endpoint impact, potential for spread, productivity reduction",
+    "estimated_cost": 33083,
+    "sla_met": true,
+    "mttr": 397,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-089, email-gateway",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-089",
+      "email-gateway"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for malware_detection incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Trojan detected in email attachment resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 397 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-20T00:00:00Z",
+    "incident_id": "INC-2025-1220-024",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "phishing_attack",
+    "title": "Spear phishing targeting executives",
+    "description": "Spear phishing targeting executives - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "exec-accounts",
+      "email-gateway"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "phishing-attack",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-20T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-20T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-20T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-20T05:24:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-20T07:43:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-20T07:43:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 463,
+    "resolution_summary": "Spear phishing targeting executives resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for phishing_attack incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "technique": [
+        "T1566 - Phishing",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1017 - User Training",
+        "M1032 - Multi-factor Authentication",
+        "M1021 - Restrict Web-Based Content"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001",
+      "TA0006"
+    ],
+    "mitre_technique_ids": [
+      "T1566",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1017",
+      "M1032",
+      "M1021"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 115750,
+    "sla_met": false,
+    "mttr": 463,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: exec-accounts, email-gateway",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "exec-accounts",
+      "email-gateway"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for phishing_attack incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Spear phishing targeting executives resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 463 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-12T00:00:00Z",
+    "incident_id": "INC-2025-1012-025",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "stale_account",
+    "title": "Former contractor account still active",
+    "description": "Former contractor account still active - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "contractor-accounts",
+      "vpn-access"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "stale-account",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-12T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-12T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-12T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-12T05:10:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-12T07:24:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-12T07:24:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 444,
+    "resolution_summary": "Former contractor account still active resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for stale_account incident",
+    "mitre": {
+      "tactic": [
+        "Persistence",
+        "Privilege Escalation"
+      ],
+      "technique": [
+        "T1078 - Valid Accounts",
+        "T1098 - Account Manipulation"
+      ],
+      "prevention": [
+        "M1026 - Privileged Account Management",
+        "M1018 - User Account Management"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0003",
+      "TA0004"
+    ],
+    "mitre_technique_ids": [
+      "T1078",
+      "T1098"
+    ],
+    "mitre_prevention_ids": [
+      "M1026",
+      "M1018"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 111000,
+    "sla_met": false,
+    "mttr": 444,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: contractor-accounts, vpn-access",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "contractor-accounts",
+      "vpn-access"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for stale_account incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Former contractor account still active resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 444 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-18T00:00:00Z",
+    "incident_id": "INC-2025-1018-026",
+    "severity": "low",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "configuration_drift",
+    "title": "Firewall rules not matching baseline",
+    "description": "Firewall rules not matching baseline - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "firewall-prod",
+      "network-security"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "configuration-drift",
+      "infrastructure",
+      "low"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-18T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-18T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-18T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-18T03:01:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-18T04:19:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-18T04:19:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 259,
+    "resolution_summary": "Firewall rules not matching baseline resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for configuration_drift incident",
+    "mitre": {
+      "tactic": [
+        "Defense Evasion"
+      ],
+      "technique": [
+        "T1562 - Impair Defenses"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1022 - Restrict File and Directory Permissions"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0005"
+    ],
+    "mitre_technique_ids": [
+      "T1562"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1022"
+    ],
+    "affected_users_count": 45,
+    "business_impact": "Low impact to infrastructure systems affecting service delivery",
+    "estimated_cost": 4316,
+    "sla_met": true,
+    "mttr": 259,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: firewall-prod, network-security",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "firewall-prod",
+      "network-security"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for configuration_drift incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Firewall rules not matching baseline resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 259 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-19T00:00:00Z",
+    "incident_id": "INC-2025-1119-027",
+    "severity": "high",
+    "status": "resolved",
+    "category": "application",
+    "type": "memory_leak",
+    "title": "API service memory exhaustion",
+    "description": "API service memory exhaustion - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "user-api",
+      "kubernetes-cluster"
+    ],
+    "assigned_to": "application-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "memory-leak",
+      "application",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-19T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-19T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-19T00:29:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-19T00:42:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-19T00:42:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 42,
+    "resolution_summary": "API service memory exhaustion resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for memory_leak incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1053 - Data Backup"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1053"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Application critical functionality impaired, significant user impact, revenue at risk",
+    "estimated_cost": 10500,
+    "sla_met": true,
+    "mttr": 42,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: user-api, kubernetes-cluster",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "user-api",
+      "kubernetes-cluster"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for memory_leak incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "API service memory exhaustion resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by application-team within 42 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-14T00:00:00Z",
+    "incident_id": "INC-2025-1214-028",
+    "severity": "high",
+    "status": "resolved",
+    "category": "security",
+    "type": "unauthorized_access_attempt",
+    "title": "Brute force attack on admin panel",
+    "description": "Brute force attack on admin panel - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "admin-portal",
+      "auth-system"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "unauthorized-access-attempt",
+      "security",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-14T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-14T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-14T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-14T00:55:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-14T01:19:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-14T01:19:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 79,
+    "resolution_summary": "Brute force attack on admin panel resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for unauthorized_access_attempt incident",
+    "mitre": {
+      "tactic": [
+        "Credential Access",
+        "Initial Access"
+      ],
+      "technique": [
+        "T1110 - Brute Force",
+        "T1078 - Valid Accounts"
+      ],
+      "prevention": [
+        "M1036 - Account Use Policies",
+        "M1032 - Multi-factor Authentication",
+        "M1027 - Password Policies"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0006",
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1110",
+      "T1078"
+    ],
+    "mitre_prevention_ids": [
+      "M1036",
+      "M1032",
+      "M1027"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Significant security exposure, potential data loss, reputation damage risk, compliance concerns",
+    "estimated_cost": 19750,
+    "sla_met": true,
+    "mttr": 79,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: admin-portal, auth-system",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "admin-portal",
+      "auth-system"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for unauthorized_access_attempt incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Brute force attack on admin panel resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 79 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-12T00:00:00Z",
+    "incident_id": "INC-2025-1212-029",
+    "severity": "critical",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "service_outage",
+    "title": "Kubernetes control plane failure",
+    "description": "Kubernetes control plane failure - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "k8s-control-plane",
+      "all-services"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "service-outage",
+      "infrastructure",
+      "critical"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-12T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-12T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-12T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-12T01:06:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-12T01:35:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-12T01:35:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 95,
+    "resolution_summary": "Kubernetes control plane failure resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for service_outage incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1037 - Filter Network Traffic"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1037"
+    ],
+    "affected_users_count": 5000,
+    "business_impact": "Complete infrastructure failure, business operations halted, productivity loss severe",
+    "estimated_cost": 79166,
+    "sla_met": true,
+    "mttr": 95,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: k8s-control-plane, all-services",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "k8s-control-plane",
+      "all-services"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for service_outage incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Kubernetes control plane failure resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 95 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-12-24T00:00:00Z",
+    "incident_id": "INC-2025-1224-030",
+    "severity": "high",
+    "status": "resolved",
+    "category": "api",
+    "type": "error_spike",
+    "title": "Rate limiting failures causing cascading errors",
+    "description": "Rate limiting failures causing cascading errors - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "rate-limiter",
+      "api-gateway"
+    ],
+    "assigned_to": "api-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "error-spike",
+      "api",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-12-24T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-12-24T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-12-24T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T01:22:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-12-24T01:58:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-12-24T01:58:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 118,
+    "resolution_summary": "Rate limiting failures causing cascading errors resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for error_spike incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1499 - Endpoint Denial of Service"
+      ],
+      "prevention": [
+        "M1047 - Audit",
+        "M1018 - User Account Management"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1499"
+    ],
+    "mitre_prevention_ids": [
+      "M1047",
+      "M1018"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Major service degradation, revenue impact $150K+, elevated customer complaints, performance SLA at risk",
+    "estimated_cost": 29500,
+    "sla_met": true,
+    "mttr": 118,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: rate-limiter, api-gateway",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "rate-limiter",
+      "api-gateway"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for error_spike incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Rate limiting failures causing cascading errors resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by api-team within 118 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-29T00:00:00Z",
+    "incident_id": "INC-2025-1129-031",
+    "severity": "high",
+    "status": "resolved",
+    "category": "application",
+    "type": "vulnerable_dependency",
+    "title": "Log4j vulnerability detected in multiple services",
+    "description": "Log4j vulnerability detected in multiple services - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "java-services",
+      "logging-infrastructure"
+    ],
+    "assigned_to": "application-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "vulnerable-dependency",
+      "application",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-29T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-29T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-29T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-29T03:18:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-29T04:43:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-29T04:43:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 283,
+    "resolution_summary": "Log4j vulnerability detected in multiple services resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for vulnerable_dependency incident",
+    "mitre": {
+      "tactic": [
+        "Initial Access"
+      ],
+      "technique": [
+        "T1190 - Exploit Public-Facing Application",
+        "T1203 - Exploitation for Client Execution"
+      ],
+      "prevention": [
+        "M1051 - Update Software",
+        "M1016 - Vulnerability Scanning"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0001"
+    ],
+    "mitre_technique_ids": [
+      "T1190",
+      "T1203"
+    ],
+    "mitre_prevention_ids": [
+      "M1051",
+      "M1016"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Application critical functionality impaired, significant user impact, revenue at risk",
+    "estimated_cost": 70750,
+    "sla_met": false,
+    "mttr": 283,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: java-services, logging-infrastructure",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "java-services",
+      "logging-infrastructure"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for vulnerable_dependency incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Log4j vulnerability detected in multiple services resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by application-team within 283 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-15T00:00:00Z",
+    "incident_id": "INC-2025-1015-032",
+    "severity": "high",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "ransomware_detection",
+    "title": "Ransomware encryption attempt blocked",
+    "description": "Ransomware encryption attempt blocked - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-256",
+      "file-shares"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "ransomware-detection",
+      "endpoint",
+      "high"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-15T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-15T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-15T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-15T01:14:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-15T01:46:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-15T01:46:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 106,
+    "resolution_summary": "Ransomware encryption attempt blocked resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for ransomware_detection incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1486 - Data Encrypted for Impact",
+        "T1490 - Inhibit System Recovery"
+      ],
+      "prevention": [
+        "M1053 - Data Backup",
+        "M1040 - Behavior Prevention on Endpoint",
+        "M1049 - Antivirus/Antimalware"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1486",
+      "T1490"
+    ],
+    "mitre_prevention_ids": [
+      "M1053",
+      "M1040",
+      "M1049"
+    ],
+    "affected_users_count": 1200,
+    "business_impact": "Multiple endpoints compromised, potential for lateral movement, data at risk",
+    "estimated_cost": 26500,
+    "sla_met": true,
+    "mttr": 106,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-256, file-shares",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-256",
+      "file-shares"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for ransomware_detection incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Ransomware encryption attempt blocked resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 106 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-23T00:00:00Z",
+    "incident_id": "INC-2025-1023-033",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "endpoint",
+    "type": "policy_violation",
+    "title": "USB device policy violation",
+    "description": "USB device policy violation - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-178",
+      "dlp-system"
+    ],
+    "assigned_to": "endpoint-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "policy-violation",
+      "endpoint",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-23T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-23T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-23T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-23T03:51:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-23T05:31:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-23T05:31:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 331,
+    "resolution_summary": "USB device policy violation resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for policy_violation incident",
+    "mitre": {
+      "tactic": [
+        "Command and Control"
+      ],
+      "technique": [
+        "T1219 - Remote Access Software",
+        "T1105 - Ingress Tool Transfer"
+      ],
+      "prevention": [
+        "M1038 - Execution Prevention",
+        "M1031 - Network Intrusion Prevention",
+        "M1017 - User Training"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0011"
+    ],
+    "mitre_technique_ids": [
+      "T1219",
+      "T1105"
+    ],
+    "mitre_prevention_ids": [
+      "M1038",
+      "M1031",
+      "M1017"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Limited endpoint impact, potential for spread, productivity reduction",
+    "estimated_cost": 27583,
+    "sla_met": true,
+    "mttr": 331,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-178, dlp-system",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-178",
+      "dlp-system"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for policy_violation incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "USB device policy violation resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by endpoint-team within 331 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-10-28T00:00:00Z",
+    "incident_id": "INC-2025-1028-034",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "security",
+    "type": "data_exfiltration",
+    "title": "Large file transfer to personal cloud storage",
+    "description": "Large file transfer to personal cloud storage - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "endpoint-145",
+      "network-monitoring"
+    ],
+    "assigned_to": "security-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "data-exfiltration",
+      "security",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-10-28T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-10-28T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-10-28T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-28T01:31:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-10-28T02:11:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-10-28T02:11:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 131,
+    "resolution_summary": "Large file transfer to personal cloud storage resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for data_exfiltration incident",
+    "mitre": {
+      "tactic": [
+        "Exfiltration",
+        "Collection"
+      ],
+      "technique": [
+        "T1020 - Automated Exfiltration",
+        "T1039 - Data from Network Shared Drive"
+      ],
+      "prevention": [
+        "M1057 - Data Loss Prevention",
+        "M1041 - Encrypt Sensitive Information"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0010",
+      "TA0009"
+    ],
+    "mitre_technique_ids": [
+      "T1020",
+      "T1039"
+    ],
+    "mitre_prevention_ids": [
+      "M1057",
+      "M1041"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Moderate security risk, limited exposure, potential for escalation if not addressed",
+    "estimated_cost": 10916,
+    "sla_met": true,
+    "mttr": 131,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: endpoint-145, network-monitoring",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "endpoint-145",
+      "network-monitoring"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [
+      "Updated WAF rules and firewall policies",
+      "Enhanced authentication and authorization mechanisms",
+      "Implemented additional logging and audit trails",
+      "Strengthened endpoint detection and response capabilities"
+    ],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for data_exfiltration incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Large file transfer to personal cloud storage resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by security-team within 131 minutes of detection"
+  },
+  {
+    "@timestamp": "2025-11-07T00:00:00Z",
+    "incident_id": "INC-2025-1107-035",
+    "severity": "medium",
+    "status": "resolved",
+    "category": "infrastructure",
+    "type": "ddos_attack",
+    "title": "Volumetric DDoS attack on DNS infrastructure",
+    "description": "Volumetric DDoS attack on DNS infrastructure - incident detected and resolved in Q4 2025",
+    "affected_systems": [
+      "dns-servers",
+      "authoritative-ns"
+    ],
+    "assigned_to": "infrastructure-team",
+    "detection_method": "Automated monitoring",
+    "tags": [
+      "ddos-attack",
+      "infrastructure",
+      "medium"
+    ],
+    "timeline": [
+      {
+        "timestamp": "2025-11-07T00:00:00Z",
+        "event": "Incident detected by monitoring system",
+        "actor": "monitoring-system"
+      },
+      {
+        "timestamp": "2025-11-07T00:02:00Z",
+        "event": "Alert acknowledged by on-call engineer",
+        "actor": "oncall@company.com"
+      },
+      {
+        "timestamp": "2025-11-07T00:15:00Z",
+        "event": "Root cause identified",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-07T00:43:00Z",
+        "event": "Fix applied and testing",
+        "actor": "engineering-team"
+      },
+      {
+        "timestamp": "2025-11-07T01:02:00Z",
+        "event": "Incident resolved and services restored",
+        "actor": "engineering-team"
+      }
+    ],
+    "resolved_timestamp": "2025-11-07T01:02:00Z",
+    "resolved_by": "engineering@company.com",
+    "resolution_time_minutes": 62,
+    "resolution_summary": "Volumetric DDoS attack on DNS infrastructure resolved successfully. Systems restored to normal operation",
+    "root_cause_analysis": "Root cause analysis completed for ddos_attack incident",
+    "mitre": {
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "T1498 - Network Denial of Service"
+      ],
+      "prevention": [
+        "M1037 - Filter Network Traffic",
+        "M1031 - Network Intrusion Prevention"
+      ]
+    },
+    "mitre_tactic_ids": [
+      "TA0040"
+    ],
+    "mitre_technique_ids": [
+      "T1498"
+    ],
+    "mitre_prevention_ids": [
+      "M1037",
+      "M1031"
+    ],
+    "affected_users_count": 350,
+    "business_impact": "Infrastructure component degradation, backup systems engaged, limited impact",
+    "estimated_cost": 5166,
+    "sla_met": true,
+    "mttr": 62,
+    "mtta": 2,
+    "remediation_actions": [
+      "Isolated and secured affected systems: dns-servers, authoritative-ns",
+      "Applied immediate patches and configuration updates to affected components",
+      "Verified system integrity and restored normal operations",
+      "Conducted security validation and compliance checks"
+    ],
+    "systems_remediated": [
+      "dns-servers",
+      "authoritative-ns"
+    ],
+    "preventive_measures": [
+      "Enhanced monitoring and alerting for similar attack patterns and anomalies",
+      "Updated security policies and access control mechanisms",
+      "Implemented additional validation and testing procedures",
+      "Scheduled regular security audits and compliance reviews"
+    ],
+    "security_controls_updated": [],
+    "documentation_updated": [
+      "Incident response runbook updated with lessons learned",
+      "Security procedures documentation enhanced",
+      "System architecture diagrams updated",
+      "Recovery and rollback procedures documented"
+    ],
+    "lessons_learned": "Root cause analysis completed for ddos_attack incident",
+    "follow_up_tasks": [
+      "Conduct post-incident review with all stakeholders",
+      "Update disaster recovery and business continuity plans",
+      "Schedule training sessions for affected teams",
+      "Implement long-term preventive measures by Q1 2026"
+    ],
+    "resolution": "Volumetric DDoS attack on DNS infrastructure resolved successfully. Systems restored to normal operation",
+    "action_taken": "Resolved by infrastructure-team within 62 minutes of detection"
+  }
+]
