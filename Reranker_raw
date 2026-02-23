@@ -1,0 +1,602 @@
+1. [Alert] PC acting weird after opening email attachment, fans spinning loud, files opening slowly	
+
+documents
+
+0
+pageContent:# Incident: Trojan detected on employee workstation\n\n**ID**: INC-2026-0209-003 | **Severity**: medium | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nEDR flagged trojan.generic.12345 on workstation WKS-HR-089. File quarantined automatically. Investigating lateral movement\n\n## Timeline\n- [2026-02-09T09:15:33.000Z] EDR detected and quarantined trojan.generic.12345\n- [2026-02-09T09:18:00.000Z] Security team notified of malware detection\n- [2026-02-09T09:25:00.000Z] Analyst began investigation, isolated workstation from network\n- [2026-02-09T09:40:00.000Z] Submitted hash to VirusTotal, confirmed as InfoStealer variant\n- [2026-02-09T10:05:00.000Z] Memory dump analyzed, no credential theft detected\n- [2026-02-09T10:30:00.000Z] Network traffic analysis complete, no C2 communication or lateral movement\n- [2026-02-09T11:15:00.000Z] Workstation reimaged with clean OS image\n- [2026-02-09T12:00:00.000Z] User account password reset as precaution\n- [2026-02-09T12:30:00.000Z] Workstation returned to user, security briefing conducted\n\n## Context & Impact\n- **Affected Systems**: WKS-HR-089\n- **Detection Method**: EDR\n- **Category**: security | **Type**: malware_detection\n- **Malware Hash**: a3c5e8d2f1b9a4e6c8d1f3b5a7c9e2d4\n\n## Analysis\n- **Root Cause**: User downloaded malicious file disguised as PDF invoice from phishing email. File executed before email filtering caught the threat\n- **Resolution**: Malware quarantined immediately by EDR. Analysis confirmed no data exfiltration or lateral movement. Workstation reimaged and returned to service\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0002 - Execution, TA0009 - Collection\n- **Techniques**: T1566.001 - Phishing: Spearphishing Attachment, T1204.002 - User Execution: Malicious File, T1005 - Data from Local System\n- **Prevention**: M1049 - Antivirus/Antimalware, M1040 - Behavior Prevention on Endpoint, M1021 - Restrict Web-Based Content, M1017 - User Training
+metadata
+loc
+lines
+to:33
+from:1
+date:2026-02-09
+tags
+0:malware
+1:endpoint
+2:trojan
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:medium
+incident_id:INC-2026-0209-003
+affected_systems
+0:WKS-HR-089
+detection_method:EDR
+mitre_tactic_ids
+0:TA0001
+1:TA0002
+2:TA0009
+mitre_technique_ids
+0:T1566.001
+1:T1204.002
+2:T1005
+mitre_mitigation_ids
+0:M1049
+1:M1040
+2:M1021
+3:M1017
+1
+pageContent:# Incident: Ransomware encryption activity detected\n\n**ID**: INC-2026-0208-014 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-08\n\n## Description\nRapid file modification pattern detected on file share \\fileserver-05\finance. 1,247 files encrypted before isolation. Ransomware note identified\n\n## Timeline\n- [2026-02-08T19:45:27.000Z] Behavioral analysis detected rapid file modification pattern\n- [2026-02-08T19:45:35.000Z] Automatic isolation of fileserver-05 from network triggered\n- [2026-02-08T19:45:40.000Z] User account a.hernandez disabled automatically\n- [2026-02-08T19:46:00.000Z] Critical security alert sent to incident response team\n- [2026-02-08T19:48:00.000Z] Incident response team assembled, war room initiated\n- [2026-02-08T19:55:00.000Z] Ransomware note identified, variant confirmed as LockBit 3.0\n- [2026-02-08T20:15:00.000Z] Forensic analysis of user workstation initiated\n- [2026-02-08T20:45:00.000Z] Initial infection vector identified: malicious email attachment\n- [2026-02-08T21:30:00.000Z] Network-wide scan completed, no additional infections found\n- [2026-02-08T22:00:00.000Z] Initiated restore from backup (4 hours old)\n- [2026-02-09T01:45:00.000Z] File restore completed, integrity verified\n- [2026-02-09T02:30:00.000Z] Fileserver-05 cleaned, patched, and returned to service\n- [2026-02-09T08:00:00.000Z] Post-incident briefing held with leadership\n\n## Context & Impact\n- **Affected Systems**: fileserver-05\n- **Detection Method**: Behavioral analysis\n- **Category**: security | **Type**: ransomware\n\n## Analysis\n- **Root Cause**: User opened malicious Excel attachment with macro from convincing spoofed vendor email. Macro downloaded and executed LockBit 3.0 payload\n- **Resolution**: Ransomware contained within 8 seconds of detection. 1,247 files encrypted but restored from backup with 4-hour data loss. No ransom paid\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0002 - Execution, TA0040 - Impact, TA0005 - Defense Evasion\n- **Techniques**: T1566.001 - Phishing: Spearphishing Attachment, T1204.002 - User Execution: Malicious File, T1486 - Data Encrypted for Impact, T1027 - Obfuscated Files or Information\n- **Prevention**: M1049 - Antivirus/Antimalware, M1040 - Behavior Prevention on Endpoint, M1053 - Data Backup, M1017 - User Training, M1022 - Restrict File and Directory Permissions, M1031 - Network Intrusion Prevention
+metadata
+loc
+lines
+to:36
+from:1
+date:2026-02-08
+tags
+0:ransomware
+1:critical
+2:file-encryption
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0208-014
+affected_systems
+0:fileserver-05
+detection_method:Behavioral analysis
+mitre_tactic_ids
+0:TA0001
+1:TA0002
+2:TA0040
+3:TA0005
+mitre_technique_ids
+0:T1566.001
+1:T1204.002
+2:T1486
+3:T1027
+mitre_mitigation_ids
+0:M1049
+1:M1040
+2:M1053
+3:M1017
+4:M1022
+5:M1031
+2
+pageContent:# Incident: Credential phishing campaign targeting employees\n\n**ID**: INC-2026-0208-013 | **Severity**: medium | **Status**: resolved\n**Date**: 2026-02-08\n\n## Description\n15 employees reported suspicious Office 365 login emails. 2 users entered credentials on fake portal. Passwords reset, MFA enforced\n\n## Timeline\n- [2026-02-08T16:52:13.000Z] First employee reported suspicious email to security team\n- [2026-02-08T16:55:00.000Z] Security analyst began investigating reported email\n- [2026-02-08T17:02:00.000Z] Identified as credential phishing campaign, 14 more reports came in\n- [2026-02-08T17:10:00.000Z] Blocked phishing domain office365-secure-login.tk at firewall and email gateway\n- [2026-02-08T17:20:00.000Z] Searched email logs, identified 47 employees received the phishing email\n- [2026-02-08T17:35:00.000Z] Contacted all recipients via phone to verify if credentials entered\n- [2026-02-08T18:15:00.000Z] Identified 2 users who entered credentials on fake portal\n- [2026-02-08T18:25:00.000Z] Force password reset for 2 compromised accounts\n- [2026-02-08T18:30:00.000Z] Reviewed login attempts for both accounts, no unauthorized access detected\n- [2026-02-08T18:45:00.000Z] Enforced MFA on both compromised accounts\n- [2026-02-08T19:00:00.000Z] Sent security awareness email to all employees about phishing campaign\n\n## Context & Impact\n- **Category**: security | **Type**: phishing\n\n## Analysis\n- **Root Cause**: Sophisticated phishing email spoofed legitimate Office 365 security alert. Used recently registered .tk domain that bypassed initial email filters\n- **Resolution**: Phishing campaign blocked, domain blacklisted. 2 compromised credentials reset before unauthorized use. MFA enforced on affected accounts\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0006 - Credential Access, TA0009 - Collection\n- **Techniques**: T1566.002 - Phishing: Spearphishing Link, T1056.003 - Input Capture: Web Portal Capture, T1114 - Email Collection\n- **Prevention**: M1017 - User Training, M1032 - Multi-factor Authentication, M1021 - Restrict Web-Based Content, M1054 - Software Configuration
+metadata
+loc
+lines
+to:32
+from:1
+date:2026-02-08
+tags
+0:phishing
+1:credentials
+2:social-engineering
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:medium
+incident_id:INC-2026-0208-013
+affected_systems:[empty array]
+detection_method:null
+mitre_tactic_ids
+0:TA0001
+1:TA0006
+2:TA0009
+mitre_technique_ids
+0:T1566.002
+1:T1056.003
+2:T1114
+mitre_mitigation_ids
+0:M1017
+1:M1032
+2:M1021
+3:M1054
+3
+pageContent:# Incident: Suspicious lateral movement detected\n\n**ID**: INC-2026-0207-022 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nCompromised service account 'svc-monitoring' used to access 12 servers outside normal scope within 10 minutes via RDP and PSExec\n\n## Timeline\n- [2026-02-07T23:47:03.000Z] Behavioral analytics detected anomalous lateral movement pattern\n- [2026-02-07T23:48:00.000Z] Critical alert sent to incident response team\n- [2026-02-07T23:50:00.000Z] On-call analyst acknowledged, initiated containment procedures\n- [2026-02-07T23:52:00.000Z] Disabled svc-monitoring account to halt lateral movement\n- [2026-02-07T23:55:00.000Z] Isolated source workstation (10.20.15.67) from network\n- [2026-02-08T00:10:00.000Z] Incident response team fully assembled, war room initiated\n- [2026-02-08T00:30:00.000Z] Forensic analysis of source workstation began\n- [2026-02-08T01:15:00.000Z] Found credential dumping tool (Mimikatz) on source workstation\n- [2026-02-08T02:00:00.000Z] Identified initial compromise via stolen VPN credentials\n- [2026-02-08T03:30:00.000Z] Scanned all 12 affected servers for persistence mechanisms\n- [2026-02-08T05:00:00.000Z] No persistence found, attacker activity contained to reconnaissance\n- [2026-02-08T06:30:00.000Z] Reset credentials for all service accounts and affected systems\n- [2026-02-08T08:00:00.000Z] Completed remediation, systems returned to production\n\n## Context & Impact\n- **Affected Systems**: srv-app-01, srv-app-02, srv-db-03, srv-web-05\n- **Detection Method**: Behavioral analytics\n- **Category**: security | **Type**: lateral_movement\n- **Source IP**: 10.20.15.67\n\n## Analysis\n- **Root Cause**: User VPN credentials compromised via previous phishing attack. No MFA on VPN allowed attacker access. Service account credentials stored in LSASS memory were dumped\n- **Resolution**: Attacker gained VPN access with stolen credentials, dumped service account creds, attempted reconnaissance via lateral movement. Contained within 5 minutes of detection\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0006 - Credential Access, TA0008 - Lateral Movement, TA0007 - Discovery\n- **Techniques**: T1133 - External Remote Services, T1003.001 - OS Credential Dumping: LSASS Memory, T1021.001 - Remote Services: Remote Desktop Protocol, T1021.002 - Remote Services: SMB/Windows Admin Shares, T1018 - Remote System Discovery\n- **Prevention**: M1032 - Multi-factor Authentication, M1043 - Credential Access Protection, M1030 - Network Segmentation, M1026 - Privileged Account Management, M1035 - Limit Access to Resource Over Network, M1047 - Audit
+metadata
+loc
+lines
+to:37
+from:1
+date:2026-02-07
+tags
+0:lateral-movement
+1:compromise
+2:service-account
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0207-022
+affected_systems
+0:srv-app-01
+1:srv-app-02
+2:srv-db-03
+3:srv-web-05
+detection_method:Behavioral analytics
+mitre_tactic_ids
+0:TA0001
+1:TA0006
+2:TA0008
+3:TA0007
+mitre_technique_ids
+0:T1133
+1:T1003.001
+2:T1021.001
+3:T1021.002
+4:T1018
+mitre_mitigation_ids
+0:M1032
+1:M1043
+2:M1030
+3:M1026
+4:M1035
+5:M1047
+4
+pageContent:# Incident: Unusual data transfer volume detected\n\n**ID**: INC-2026-0209-005 | **Severity**: high | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nAccount 'svc-backup@company.com' transferred 45GB to external S3 bucket outside normal backup window. Investigating unauthorized data access\n\n## Timeline\n- [2026-02-09T07:33:44.000Z] DLP system alerted on unusual data transfer volume\n- [2026-02-09T07:36:00.000Z] Security analyst acknowledged alert and began investigation\n- [2026-02-09T07:42:00.000Z] Disabled service account credentials to halt transfer\n- [2026-02-09T07:55:00.000Z] Contacted infrastructure team to identify S3 bucket owner\n- [2026-02-09T08:20:00.000Z] Confirmed bucket belongs to approved DR vendor, legitimate backup\n- [2026-02-09T08:35:00.000Z] Verified backup job was manually triggered by ops team outside schedule\n- [2026-02-09T08:50:00.000Z] Re-enabled service account, confirmed backup completed successfully\n- [2026-02-09T09:15:00.000Z] Updated DLP whitelist to include DR vendor S3 bucket\n\n## Context & Impact\n- **Affected Systems**: file-server-03, s3-external\n- **Detection Method**: DLP alert\n- **Category**: security | **Type**: data_exfiltration\n\n## Analysis\n- **Root Cause**: New DR vendor S3 bucket not added to DLP whitelist during vendor onboarding. Manual backup triggered by ops team for compliance testing\n- **Resolution**: Alert was false positive. Manual backup to approved DR vendor triggered outside normal schedule caused DLP alert. Whitelist updated\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0010 - Exfiltration\n- **Techniques**: T1537 - Transfer Data to Cloud Account\n- **Prevention**: M1057 - Data Loss Prevention, M1037 - Filter Network Traffic, M1018 - User Account Management
+metadata
+loc
+lines
+to:31
+from:1
+date:2026-02-09
+tags
+0:data-exfiltration
+1:dlp
+2:cloud
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:high
+incident_id:INC-2026-0209-005
+affected_systems
+0:file-server-03
+1:s3-external
+detection_method:DLP alert
+mitre_tactic_ids
+0:TA0010
+mitre_technique_ids
+0:T1537
+mitre_mitigation_ids
+0:M1057
+1:M1037
+2:M1018
+
+Output
+response
+0
+pageContent:# Incident: Ransomware encryption activity detected\n\n**ID**: INC-2026-0208-014 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-08\n\n## Description\nRapid file modification pattern detected on file share \\fileserver-05\finance. 1,247 files encrypted before isolation. Ransomware note identified\n\n## Timeline\n- [2026-02-08T19:45:27.000Z] Behavioral analysis detected rapid file modification pattern\n- [2026-02-08T19:45:35.000Z] Automatic isolation of fileserver-05 from network triggered\n- [2026-02-08T19:45:40.000Z] User account a.hernandez disabled automatically\n- [2026-02-08T19:46:00.000Z] Critical security alert sent to incident response team\n- [2026-02-08T19:48:00.000Z] Incident response team assembled, war room initiated\n- [2026-02-08T19:55:00.000Z] Ransomware note identified, variant confirmed as LockBit 3.0\n- [2026-02-08T20:15:00.000Z] Forensic analysis of user workstation initiated\n- [2026-02-08T20:45:00.000Z] Initial infection vector identified: malicious email attachment\n- [2026-02-08T21:30:00.000Z] Network-wide scan completed, no additional infections found\n- [2026-02-08T22:00:00.000Z] Initiated restore from backup (4 hours old)\n- [2026-02-09T01:45:00.000Z] File restore completed, integrity verified\n- [2026-02-09T02:30:00.000Z] Fileserver-05 cleaned, patched, and returned to service\n- [2026-02-09T08:00:00.000Z] Post-incident briefing held with leadership\n\n## Context & Impact\n- **Affected Systems**: fileserver-05\n- **Detection Method**: Behavioral analysis\n- **Category**: security | **Type**: ransomware\n\n## Analysis\n- **Root Cause**: User opened malicious Excel attachment with macro from convincing spoofed vendor email. Macro downloaded and executed LockBit 3.0 payload\n- **Resolution**: Ransomware contained within 8 seconds of detection. 1,247 files encrypted but restored from backup with 4-hour data loss. No ransom paid\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0002 - Execution, TA0040 - Impact, TA0005 - Defense Evasion\n- **Techniques**: T1566.001 - Phishing: Spearphishing Attachment, T1204.002 - User Execution: Malicious File, T1486 - Data Encrypted for Impact, T1027 - Obfuscated Files or Information\n- **Prevention**: M1049 - Antivirus/Antimalware, M1040 - Behavior Prevention on Endpoint, M1053 - Data Backup, M1017 - User Training, M1022 - Restrict File and Directory Permissions, M1031 - Network Intrusion Prevention
+metadata
+loc
+lines
+to:36
+from:1
+date:2026-02-08
+tags
+0:ransomware
+1:critical
+2:file-encryption
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0208-014
+affected_systems
+0:fileserver-05
+detection_method:Behavioral analysis
+mitre_tactic_ids
+0:TA0001
+1:TA0002
+2:TA0040
+3:TA0005
+mitre_technique_ids
+0:T1566.001
+1:T1204.002
+2:T1486
+3:T1027
+mitre_mitigation_ids
+0:M1049
+1:M1040
+2:M1053
+3:M1017
+4:M1022
+5:M1031
+relevanceScore:0.34700638
+1
+pageContent:# Incident: Trojan detected on employee workstation\n\n**ID**: INC-2026-0209-003 | **Severity**: medium | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nEDR flagged trojan.generic.12345 on workstation WKS-HR-089. File quarantined automatically. Investigating lateral movement\n\n## Timeline\n- [2026-02-09T09:15:33.000Z] EDR detected and quarantined trojan.generic.12345\n- [2026-02-09T09:18:00.000Z] Security team notified of malware detection\n- [2026-02-09T09:25:00.000Z] Analyst began investigation, isolated workstation from network\n- [2026-02-09T09:40:00.000Z] Submitted hash to VirusTotal, confirmed as InfoStealer variant\n- [2026-02-09T10:05:00.000Z] Memory dump analyzed, no credential theft detected\n- [2026-02-09T10:30:00.000Z] Network traffic analysis complete, no C2 communication or lateral movement\n- [2026-02-09T11:15:00.000Z] Workstation reimaged with clean OS image\n- [2026-02-09T12:00:00.000Z] User account password reset as precaution\n- [2026-02-09T12:30:00.000Z] Workstation returned to user, security briefing conducted\n\n## Context & Impact\n- **Affected Systems**: WKS-HR-089\n- **Detection Method**: EDR\n- **Category**: security | **Type**: malware_detection\n- **Malware Hash**: a3c5e8d2f1b9a4e6c8d1f3b5a7c9e2d4\n\n## Analysis\n- **Root Cause**: User downloaded malicious file disguised as PDF invoice from phishing email. File executed before email filtering caught the threat\n- **Resolution**: Malware quarantined immediately by EDR. Analysis confirmed no data exfiltration or lateral movement. Workstation reimaged and returned to service\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0002 - Execution, TA0009 - Collection\n- **Techniques**: T1566.001 - Phishing: Spearphishing Attachment, T1204.002 - User Execution: Malicious File, T1005 - Data from Local System\n- **Prevention**: M1049 - Antivirus/Antimalware, M1040 - Behavior Prevention on Endpoint, M1021 - Restrict Web-Based Content, M1017 - User Training
+metadata
+loc
+lines
+to:33
+from:1
+date:2026-02-09
+tags
+0:malware
+1:endpoint
+2:trojan
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:medium
+incident_id:INC-2026-0209-003
+affected_systems
+0:WKS-HR-089
+detection_method:EDR
+mitre_tactic_ids
+0:TA0001
+1:TA0002
+2:TA0009
+mitre_technique_ids
+0:T1566.001
+1:T1204.002
+2:T1005
+mitre_mitigation_ids
+0:M1049
+1:M1040
+2:M1021
+3:M1017
+relevanceScore:0.18103175
+2
+pageContent:# Incident: Suspicious lateral movement detected\n\n**ID**: INC-2026-0207-022 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nCompromised service account 'svc-monitoring' used to access 12 servers outside normal scope within 10 minutes via RDP and PSExec\n\n## Timeline\n- [2026-02-07T23:47:03.000Z] Behavioral analytics detected anomalous lateral movement pattern\n- [2026-02-07T23:48:00.000Z] Critical alert sent to incident response team\n- [2026-02-07T23:50:00.000Z] On-call analyst acknowledged, initiated containment procedures\n- [2026-02-07T23:52:00.000Z] Disabled svc-monitoring account to halt lateral movement\n- [2026-02-07T23:55:00.000Z] Isolated source workstation (10.20.15.67) from network\n- [2026-02-08T00:10:00.000Z] Incident response team fully assembled, war room initiated\n- [2026-02-08T00:30:00.000Z] Forensic analysis of source workstation began\n- [2026-02-08T01:15:00.000Z] Found credential dumping tool (Mimikatz) on source workstation\n- [2026-02-08T02:00:00.000Z] Identified initial compromise via stolen VPN credentials\n- [2026-02-08T03:30:00.000Z] Scanned all 12 affected servers for persistence mechanisms\n- [2026-02-08T05:00:00.000Z] No persistence found, attacker activity contained to reconnaissance\n- [2026-02-08T06:30:00.000Z] Reset credentials for all service accounts and affected systems\n- [2026-02-08T08:00:00.000Z] Completed remediation, systems returned to production\n\n## Context & Impact\n- **Affected Systems**: srv-app-01, srv-app-02, srv-db-03, srv-web-05\n- **Detection Method**: Behavioral analytics\n- **Category**: security | **Type**: lateral_movement\n- **Source IP**: 10.20.15.67\n\n## Analysis\n- **Root Cause**: User VPN credentials compromised via previous phishing attack. No MFA on VPN allowed attacker access. Service account credentials stored in LSASS memory were dumped\n- **Resolution**: Attacker gained VPN access with stolen credentials, dumped service account creds, attempted reconnaissance via lateral movement. Contained within 5 minutes of detection\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0006 - Credential Access, TA0008 - Lateral Movement, TA0007 - Discovery\n- **Techniques**: T1133 - External Remote Services, T1003.001 - OS Credential Dumping: LSASS Memory, T1021.001 - Remote Services: Remote Desktop Protocol, T1021.002 - Remote Services: SMB/Windows Admin Shares, T1018 - Remote System Discovery\n- **Prevention**: M1032 - Multi-factor Authentication, M1043 - Credential Access Protection, M1030 - Network Segmentation, M1026 - Privileged Account Management, M1035 - Limit Access to Resource Over Network, M1047 - Audit
+metadata
+loc
+lines
+to:37
+from:1
+date:2026-02-07
+tags
+0:lateral-movement
+1:compromise
+2:service-account
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0207-022
+affected_systems
+0:srv-app-01
+1:srv-app-02
+2:srv-db-03
+3:srv-web-05
+detection_method:Behavioral analytics
+mitre_tactic_ids
+0:TA0001
+1:TA0006
+2:TA0008
+3:TA0007
+mitre_technique_ids
+0:T1133
+1:T1003.001
+2:T1021.001
+3:T1021.002
+4:T1018
+mitre_mitigation_ids
+0:M1032
+1:M1043
+2:M1030
+3:M1026
+4:M1035
+5:M1047
+relevanceScore:0.016787134
+
+[ALERT] mayday mayday mayday
+
+Triage Note – Generic High-Urgency Alert (Unknown System)
+
+Root Cause (most common) • Compromised user credentials leading to unauthorized access. • Disk space exhaustion on a critical node due to log rotation failure. • Physical network hardware (cable) degradation causing connectivity issues.
+
+What’s unique in this alert • The alert is a generic distress signal ("mayday mayday mayday") and lacks specific details about the system or error, unlike past incidents which had clear descriptions like "Suspicious lateral movement detected" or "Database cluster primary node failure".
+
+Step‑by‑step resolution a. Acknowledge the alert and initiate incident response procedures. b. Review primary monitoring and behavioral analytics dashboards to identify the affected system(s) and the nature of the anomaly. c. If security-related (anomalous lateral movement), disable the compromised account and isolate the source workstation from the network. d. If an engineering issue (like a node crash), verify that automatic failover has occurred and service is restored. e. Investigate the root cause on the failed component, such as checking disk space, log rotation configurations, or network connectivity. f. Remediate the issue by clearing disk space, fixing configurations, or replacing faulty hardware. g. Manually trigger and verify system functions (e.g., backups, cluster replication) after remediation. h. Reset credentials for any affected accounts or systems as a precaution.
+
+Related incidents (historical) • INC-2026-0207-022: A compromised service account was used for lateral movement; the account was disabled and the source workstation was isolated to contain the threat. • INC-2026-0209-002: A database primary node crashed due to disk space exhaustion; an automatic failover to the secondary node occurred successfully. • INC-2026-0207-019: A critical backup job failed due to a network timeout caused by a faulty cable, which was replaced.
+
+Historical success patterns • Rapid containment is a key success factor. The security incident was contained within 5 minutes of detection. • Automated recovery mechanisms, like the database failover which completed in 45 seconds, are effective at minimizing service impact.
+
+Action items for the on‑call engineer:
+
+[ ] Immediately check primary system dashboards for critical alerts (e.g., behavioral analytics, system health, backup status).
+[ ] Review logs of critical systems (e.g., production database, VPN) for specific error messages or anomalous activity.
+[ ] If signs of compromise are present, escalate to the incident response team immediately.
+[ ] If it is a system outage, verify the status of automated failover systems.
+[ ] Initiate communication in the appropriate incident response channel (e.g., war room, Slack).
+
+Reranker 
+
+2. [Alert]mayday mayday mayday	
+
+documents
+
+0
+pageContent:# Incident: SSL certificate expired on internal API\n\n**ID**: INC-2026-0208-015 | **Severity**: medium | **Status**: resolved\n**Date**: 2026-02-08\n\n## Description\nCertificate for internal-api.company.local expired at 23:59 UTC. Service disrupted for 18 minutes until emergency renewal completed\n\n## Timeline\n- [2026-02-08T22:18:09.000Z] Certificate expired, API calls began failing with SSL errors\n- [2026-02-08T22:20:00.000Z] Monitoring alerts triggered for API service failures\n- [2026-02-08T22:23:00.000Z] On-call engineer paged and acknowledged\n- [2026-02-08T22:25:00.000Z] Root cause identified as expired certificate\n- [2026-02-08T22:28:00.000Z] Initiated emergency certificate renewal via Let's Encrypt\n- [2026-02-08T22:33:00.000Z] New certificate issued and deployed to both API servers\n- [2026-02-08T22:36:00.000Z] Services restarted, SSL handshakes successful\n- [2026-02-08T23:15:00.000Z] Deployed certbot auto-renewal and monitoring script\n\n## Context & Impact\n- **Affected Systems**: internal-api-01, internal-api-02\n- **Category**: engineering | **Type**: certificate_expiration\n\n## Analysis\n- **Root Cause**: Certificate auto-renewal cron job failed silently due to filesystem permissions issue. No monitoring was in place to detect upcoming expiration\n- **Resolution**: Emergency certificate renewal completed within 18 minutes. Implemented automated renewal and expiration monitoring to prevent recurrence
+metadata
+loc
+lines
+to:25
+from:1
+date:2026-02-08
+tags
+0:certificate
+1:ssl
+2:infrastructure
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:medium
+incident_id:INC-2026-0208-015
+affected_systems
+0:internal-api-01
+1:internal-api-02
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+1
+pageContent:# Incident: Database cluster primary node failure\n\n**ID**: INC-2026-0209-002 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nPostgreSQL primary node (db-prod-01) crashed due to disk space exhaustion. Automatic failover to secondary completed in 45 seconds\n\n## Timeline\n- [2026-02-09T11:22:15.000Z] Database primary node crashed, automatic failover initiated\n- [2026-02-09T11:23:00.000Z] Failover completed to db-prod-02, service restored\n- [2026-02-09T11:25:00.000Z] DBA team notified of failover event\n- [2026-02-09T11:30:00.000Z] Investigation started on failed primary node\n- [2026-02-09T11:45:00.000Z] Root cause identified: /var partition at 100% due to log rotation failure\n- [2026-02-09T12:10:00.000Z] Cleared old logs and freed disk space on db-prod-01\n- [2026-02-09T12:30:00.000Z] Fixed logrotate configuration and tested rotation\n- [2026-02-09T13:00:00.000Z] db-prod-01 rejoined cluster as standby node\n- [2026-02-09T13:15:00.000Z] Replication verified, cluster healthy\n\n## Context & Impact\n- **Affected Systems**: db-prod-01, api-gateway\n- **Category**: engineering | **Type**: service_outage\n\n## Analysis\n- **Root Cause**: Logrotate service failed silently due to misconfigured systemd timer. PostgreSQL logs filled /var partition over 7 days until crash\n- **Resolution**: Automatic failover prevented extended outage. Fixed logrotate configuration on affected node and implemented disk space monitoring
+metadata
+loc
+lines
+to:26
+from:1
+date:2026-02-09
+tags
+0:database
+1:outage
+2:disk-space
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:critical
+incident_id:INC-2026-0209-002
+affected_systems
+0:db-prod-01
+1:api-gateway
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+2
+pageContent:# Incident: Elevated API response times on payment service\n\n**ID**: INC-2026-0209-004 | **Severity**: low | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nPayment processing API showing 2-3x normal response times. Traced to database query optimization issue after recent deployment\n\n## Timeline\n- [2026-02-09T08:42:11.000Z] APM system alerted on elevated API response times\n- [2026-02-09T08:45:00.000Z] On-call engineer acknowledged alert\n- [2026-02-09T08:50:00.000Z] Identified correlation with v2.8.3 deployment 30 minutes prior\n- [2026-02-09T09:05:00.000Z] Database query analysis revealed missing index on transactions table\n- [2026-02-09T09:20:00.000Z] Rolled back to v2.8.2, response times normalized\n- [2026-02-09T09:45:00.000Z] Created hotfix branch with missing database index migration\n- [2026-02-09T10:30:00.000Z] Tested hotfix in staging environment, performance verified\n- [2026-02-09T11:15:00.000Z] Deployed v2.8.4 with index fix to production\n\n## Context & Impact\n- **Affected Systems**: payment-api-v2, db-payments-prod\n- **Category**: engineering | **Type**: performance_degradation\n\n## Analysis\n- **Root Cause**: Database migration file missing from v2.8.3 release due to merge conflict resolution error. New query pattern required index that wasn't created\n- **Resolution**: Performance degradation caused by missing database index in v2.8.3 deployment. Rolled back immediately, then deployed hotfix with proper indexing
+metadata
+loc
+lines
+to:25
+from:1
+date:2026-02-09
+tags
+0:performance
+1:api
+2:database
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:low
+incident_id:INC-2026-0209-004
+affected_systems
+0:payment-api-v2
+1:db-payments-prod
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+3
+pageContent:# Incident: Critical backup job failure\n\n**ID**: INC-2026-0207-019 | **Severity**: high | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nNightly backup of production database failed due to network timeout. Backup window missed, investigating storage connectivity\n\n## Timeline\n- [2026-02-07T12:41:19.000Z] Backup job failure alert triggered\n- [2026-02-07T12:45:00.000Z] Backup administrator acknowledged alert\n- [2026-02-07T12:50:00.000Z] Reviewed backup logs, identified network timeout errors\n- [2026-02-07T13:05:00.000Z] Tested network connectivity between backup server and storage\n- [2026-02-07T13:20:00.000Z] Detected intermittent packet loss on backup network\n- [2026-02-07T13:40:00.000Z] Network team identified faulty cable in backup network segment\n- [2026-02-07T14:00:00.000Z] Replaced faulty network cable\n- [2026-02-07T14:15:00.000Z] Verified network connectivity stable, no packet loss\n- [2026-02-07T14:30:00.000Z] Manually initiated full backup of production database\n- [2026-02-07T19:15:00.000Z] Backup completed successfully, 2.4TB transferred\n- [2026-02-07T19:30:00.000Z] Verified backup integrity and restore capability\n\n## Context & Impact\n- **Affected Systems**: backup-server-01, db-prod-cluster\n- **Category**: engineering | **Type**: backup_failure\n\n## Analysis\n- **Root Cause**: Physical network cable degradation in backup network segment caused intermittent connectivity issues during large data transfers\n- **Resolution**: Backup failure caused by faulty network cable causing intermittent packet loss. Cable replaced, manual backup completed successfully
+metadata
+loc
+lines
+to:28
+from:1
+date:2026-02-07
+tags
+0:backup
+1:failure
+2:database
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:high
+incident_id:INC-2026-0207-019
+affected_systems
+0:backup-server-01
+1:db-prod-cluster
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+4
+pageContent:# Incident: Suspicious lateral movement detected\n\n**ID**: INC-2026-0207-022 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nCompromised service account 'svc-monitoring' used to access 12 servers outside normal scope within 10 minutes via RDP and PSExec\n\n## Timeline\n- [2026-02-07T23:47:03.000Z] Behavioral analytics detected anomalous lateral movement pattern\n- [2026-02-07T23:48:00.000Z] Critical alert sent to incident response team\n- [2026-02-07T23:50:00.000Z] On-call analyst acknowledged, initiated containment procedures\n- [2026-02-07T23:52:00.000Z] Disabled svc-monitoring account to halt lateral movement\n- [2026-02-07T23:55:00.000Z] Isolated source workstation (10.20.15.67) from network\n- [2026-02-08T00:10:00.000Z] Incident response team fully assembled, war room initiated\n- [2026-02-08T00:30:00.000Z] Forensic analysis of source workstation began\n- [2026-02-08T01:15:00.000Z] Found credential dumping tool (Mimikatz) on source workstation\n- [2026-02-08T02:00:00.000Z] Identified initial compromise via stolen VPN credentials\n- [2026-02-08T03:30:00.000Z] Scanned all 12 affected servers for persistence mechanisms\n- [2026-02-08T05:00:00.000Z] No persistence found, attacker activity contained to reconnaissance\n- [2026-02-08T06:30:00.000Z] Reset credentials for all service accounts and affected systems\n- [2026-02-08T08:00:00.000Z] Completed remediation, systems returned to production\n\n## Context & Impact\n- **Affected Systems**: srv-app-01, srv-app-02, srv-db-03, srv-web-05\n- **Detection Method**: Behavioral analytics\n- **Category**: security | **Type**: lateral_movement\n- **Source IP**: 10.20.15.67\n\n## Analysis\n- **Root Cause**: User VPN credentials compromised via previous phishing attack. No MFA on VPN allowed attacker access. Service account credentials stored in LSASS memory were dumped\n- **Resolution**: Attacker gained VPN access with stolen credentials, dumped service account creds, attempted reconnaissance via lateral movement. Contained within 5 minutes of detection\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0006 - Credential Access, TA0008 - Lateral Movement, TA0007 - Discovery\n- **Techniques**: T1133 - External Remote Services, T1003.001 - OS Credential Dumping: LSASS Memory, T1021.001 - Remote Services: Remote Desktop Protocol, T1021.002 - Remote Services: SMB/Windows Admin Shares, T1018 - Remote System Discovery\n- **Prevention**: M1032 - Multi-factor Authentication, M1043 - Credential Access Protection, M1030 - Network Segmentation, M1026 - Privileged Account Management, M1035 - Limit Access to Resource Over Network, M1047 - Audit
+metadata
+loc
+lines
+to:37
+from:1
+date:2026-02-07
+tags
+0:lateral-movement
+1:compromise
+2:service-account
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0207-022
+affected_systems
+0:srv-app-01
+1:srv-app-02
+2:srv-db-03
+3:srv-web-05
+detection_method:Behavioral analytics
+mitre_tactic_ids
+0:TA0001
+1:TA0006
+2:TA0008
+3:TA0007
+mitre_technique_ids
+0:T1133
+1:T1003.001
+2:T1021.001
+3:T1021.002
+4:T1018
+mitre_mitigation_ids
+0:M1032
+1:M1043
+2:M1030
+3:M1026
+4:M1035
+5:M1047
+
+
+Output
+response
+0
+pageContent:# Incident: Suspicious lateral movement detected\n\n**ID**: INC-2026-0207-022 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nCompromised service account 'svc-monitoring' used to access 12 servers outside normal scope within 10 minutes via RDP and PSExec\n\n## Timeline\n- [2026-02-07T23:47:03.000Z] Behavioral analytics detected anomalous lateral movement pattern\n- [2026-02-07T23:48:00.000Z] Critical alert sent to incident response team\n- [2026-02-07T23:50:00.000Z] On-call analyst acknowledged, initiated containment procedures\n- [2026-02-07T23:52:00.000Z] Disabled svc-monitoring account to halt lateral movement\n- [2026-02-07T23:55:00.000Z] Isolated source workstation (10.20.15.67) from network\n- [2026-02-08T00:10:00.000Z] Incident response team fully assembled, war room initiated\n- [2026-02-08T00:30:00.000Z] Forensic analysis of source workstation began\n- [2026-02-08T01:15:00.000Z] Found credential dumping tool (Mimikatz) on source workstation\n- [2026-02-08T02:00:00.000Z] Identified initial compromise via stolen VPN credentials\n- [2026-02-08T03:30:00.000Z] Scanned all 12 affected servers for persistence mechanisms\n- [2026-02-08T05:00:00.000Z] No persistence found, attacker activity contained to reconnaissance\n- [2026-02-08T06:30:00.000Z] Reset credentials for all service accounts and affected systems\n- [2026-02-08T08:00:00.000Z] Completed remediation, systems returned to production\n\n## Context & Impact\n- **Affected Systems**: srv-app-01, srv-app-02, srv-db-03, srv-web-05\n- **Detection Method**: Behavioral analytics\n- **Category**: security | **Type**: lateral_movement\n- **Source IP**: 10.20.15.67\n\n## Analysis\n- **Root Cause**: User VPN credentials compromised via previous phishing attack. No MFA on VPN allowed attacker access. Service account credentials stored in LSASS memory were dumped\n- **Resolution**: Attacker gained VPN access with stolen credentials, dumped service account creds, attempted reconnaissance via lateral movement. Contained within 5 minutes of detection\n\n## Defense (MITRE ATT&CK)\n- **Tactics**: TA0001 - Initial Access, TA0006 - Credential Access, TA0008 - Lateral Movement, TA0007 - Discovery\n- **Techniques**: T1133 - External Remote Services, T1003.001 - OS Credential Dumping: LSASS Memory, T1021.001 - Remote Services: Remote Desktop Protocol, T1021.002 - Remote Services: SMB/Windows Admin Shares, T1018 - Remote System Discovery\n- **Prevention**: M1032 - Multi-factor Authentication, M1043 - Credential Access Protection, M1030 - Network Segmentation, M1026 - Privileged Account Management, M1035 - Limit Access to Resource Over Network, M1047 - Audit
+metadata
+loc
+lines
+to:37
+from:1
+date:2026-02-07
+tags
+0:lateral-movement
+1:compromise
+2:service-account
+source:blob
+status:resolved
+blobType:text/plain
+category:security
+severity:critical
+incident_id:INC-2026-0207-022
+affected_systems
+0:srv-app-01
+1:srv-app-02
+2:srv-db-03
+3:srv-web-05
+detection_method:Behavioral analytics
+mitre_tactic_ids
+0:TA0001
+1:TA0006
+2:TA0008
+3:TA0007
+mitre_technique_ids
+0:T1133
+1:T1003.001
+2:T1021.001
+3:T1021.002
+4:T1018
+mitre_mitigation_ids
+0:M1032
+1:M1043
+2:M1030
+3:M1026
+4:M1035
+5:M1047
+relevanceScore:0.137869
+1
+pageContent:# Incident: Database cluster primary node failure\n\n**ID**: INC-2026-0209-002 | **Severity**: critical | **Status**: resolved\n**Date**: 2026-02-09\n\n## Description\nPostgreSQL primary node (db-prod-01) crashed due to disk space exhaustion. Automatic failover to secondary completed in 45 seconds\n\n## Timeline\n- [2026-02-09T11:22:15.000Z] Database primary node crashed, automatic failover initiated\n- [2026-02-09T11:23:00.000Z] Failover completed to db-prod-02, service restored\n- [2026-02-09T11:25:00.000Z] DBA team notified of failover event\n- [2026-02-09T11:30:00.000Z] Investigation started on failed primary node\n- [2026-02-09T11:45:00.000Z] Root cause identified: /var partition at 100% due to log rotation failure\n- [2026-02-09T12:10:00.000Z] Cleared old logs and freed disk space on db-prod-01\n- [2026-02-09T12:30:00.000Z] Fixed logrotate configuration and tested rotation\n- [2026-02-09T13:00:00.000Z] db-prod-01 rejoined cluster as standby node\n- [2026-02-09T13:15:00.000Z] Replication verified, cluster healthy\n\n## Context & Impact\n- **Affected Systems**: db-prod-01, api-gateway\n- **Category**: engineering | **Type**: service_outage\n\n## Analysis\n- **Root Cause**: Logrotate service failed silently due to misconfigured systemd timer. PostgreSQL logs filled /var partition over 7 days until crash\n- **Resolution**: Automatic failover prevented extended outage. Fixed logrotate configuration on affected node and implemented disk space monitoring
+metadata
+loc
+lines
+to:26
+from:1
+date:2026-02-09
+tags
+0:database
+1:outage
+2:disk-space
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:critical
+incident_id:INC-2026-0209-002
+affected_systems
+0:db-prod-01
+1:api-gateway
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+relevanceScore:0.09155271
+2
+pageContent:# Incident: Critical backup job failure\n\n**ID**: INC-2026-0207-019 | **Severity**: high | **Status**: resolved\n**Date**: 2026-02-07\n\n## Description\nNightly backup of production database failed due to network timeout. Backup window missed, investigating storage connectivity\n\n## Timeline\n- [2026-02-07T12:41:19.000Z] Backup job failure alert triggered\n- [2026-02-07T12:45:00.000Z] Backup administrator acknowledged alert\n- [2026-02-07T12:50:00.000Z] Reviewed backup logs, identified network timeout errors\n- [2026-02-07T13:05:00.000Z] Tested network connectivity between backup server and storage\n- [2026-02-07T13:20:00.000Z] Detected intermittent packet loss on backup network\n- [2026-02-07T13:40:00.000Z] Network team identified faulty cable in backup network segment\n- [2026-02-07T14:00:00.000Z] Replaced faulty network cable\n- [2026-02-07T14:15:00.000Z] Verified network connectivity stable, no packet loss\n- [2026-02-07T14:30:00.000Z] Manually initiated full backup of production database\n- [2026-02-07T19:15:00.000Z] Backup completed successfully, 2.4TB transferred\n- [2026-02-07T19:30:00.000Z] Verified backup integrity and restore capability\n\n## Context & Impact\n- **Affected Systems**: backup-server-01, db-prod-cluster\n- **Category**: engineering | **Type**: backup_failure\n\n## Analysis\n- **Root Cause**: Physical network cable degradation in backup network segment caused intermittent connectivity issues during large data transfers\n- **Resolution**: Backup failure caused by faulty network cable causing intermittent packet loss. Cable replaced, manual backup completed successfully
+metadata
+loc
+lines
+to:28
+from:1
+date:2026-02-07
+tags
+0:backup
+1:failure
+2:database
+source:blob
+status:resolved
+blobType:text/plain
+category:engineering
+severity:high
+incident_id:INC-2026-0207-019
+affected_systems
+0:backup-server-01
+1:db-prod-cluster
+detection_method:null
+mitre_tactic_ids:[empty array]
+mitre_technique_ids:[empty array]
+mitre_mitigation_ids:[empty array]
+relevanceScore:0.08744704
+
+Prompt
+You are an expert SRE assistant helping with incident triage.
+
+STRICTLY rely on the data retrieved from the 'Supabase Vector Store' tool. If you don't get any data from it, simply say "Sorry, no similar past incidents found." DO NOT invent or hallucinate information.
+
+Output Format:
+
+Triage Note – [Incident Title] ([System Name])
+
+Root Cause (most common)
+• [Cause based on past incidents]
+
+What’s unique in this alert
+• [Uniqueness based on user input vs past data]
+
+Step‑by‑step resolution
+a. [Step 1]
+b. [Step 2]
+...
+
+Related incidents (historical)
+• [Incident ID]: [Summary]
+
+Historical success patterns
+• [Patterns like success rate, time to resolve]
+
+Action items for the on‑call engineer:
+[Checklist]
+
+Final Output: "Sorry, no similar past incidents found."
